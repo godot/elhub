@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{handly el-hub reporting tool}
   gem.license       = "MIT"
   gem.authors       = ["dariusz gorzeba"]
-  gem.email         = "dgorzeba@gmail.com"
+  gem.email         = "dariusz.gorzeba@elpassion.pl"
   gem.homepage      = "https://github.com/godot/elhub#readme"
 
   gem.files         = `git ls-files`.split($/)

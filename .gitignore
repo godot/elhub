@@ -5,3 +5,4 @@ vendor/cache/*.gem
 /.ruby-gemset
 /.ruby-version
 /elhub-*.gem
+/tmp/*
