@@ -1,0 +1,28 @@
+= elhub
+
+* {Homepage}[https://github.com/godot/elhub#readme]
+* {Issues}[https://github.com/godot/elhub/issues]
+* {Documentation}[http://rubydoc.info/gems/elhub/frames]
+* {Email}[mailto:dgorzeba at gmail.com]
+
+== Description
+
+handly el-hub reporting tool
+
+== Features
+
+== Examples
+
+  require 'elhub'
+
+== Requirements
+
+== Install
+
+  $ gem install elhub
+
+== Copyright
+
+Copyright (c) 2013 dariusz gorzeba
+
+See LICENSE.txt for details.
