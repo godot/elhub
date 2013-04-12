@@ -2,3 +2,6 @@ Gemfile.lock
 html/
 pkg/
 vendor/cache/*.gem
+/.ruby-gemset
+/.ruby-version
+/elhub-*.gem

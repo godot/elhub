@@ -5,7 +5,7 @@ require File.expand_path('../lib/elhub/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.name          = "elhub"
   gem.version       = Elhub::VERSION
-  gem.summary       = %q{TODO: Summary}
+  gem.summary       = %q{handly el-hub reporting tool}
   gem.description   = %q{handly el-hub reporting tool}
   gem.license       = "MIT"
   gem.authors       = ["dariusz gorzeba"]
