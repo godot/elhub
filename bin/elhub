@@ -42,9 +42,9 @@ command :list do |c|
   end
 end
 
-desc 'Describe complete here'
-arg_name 'Describe arguments to complete here'
-command :complete do |c|
+desc 'List of all available projects'
+#arg_name 'Describe arguments to complete here'
+command :projects do |c|
   c.action do |global_options,options,args|
     puts "complete command ran"
     s = Sessions.create email: ENV['EMAIL'], password: ENV['PASSWORD']

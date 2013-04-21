@@ -11,7 +11,7 @@ class Sessions
     end
 
     def project_list
-      Parser.new(browser.dashboard).project_list
+      browser.dashboard.forms.first.fields[6].options.map(&:text)
     end
 
     private
@@ -19,17 +19,6 @@ class Sessions
       @browser ||= Browser.new
     end
 
-  end
-
-  class Parser
-    attr_accessor :page
-    def initialize(page)
-      @page = page
-    end
-
-    def project_list
-      page.forms.first.fields[6].options.map(&:text)
-    end
   end
 
   class Browser
@@ -76,7 +65,7 @@ class Sessions
     def agent
       @agent ||= Mechanize.new.tap do |agent|
 
-        agent.log = Logger.new("mech.log")
+        #agent.log = Logger.new("mech.log")
         agent.user_agent_alias = 'Linux Mozilla'
 
         agent.open_timeout = ENV['OPEN_TIMEOUT'].to_i
