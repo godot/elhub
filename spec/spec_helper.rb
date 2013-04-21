@@ -1,14 +1,6 @@
-require 'rubygems'
-require 'spork'
-#uncomment the following line to use spork with the debugger
-#require 'spork/ext/ruby-debug'
+ENV['RACK_ENV'] ||= 'test'
 
-Spork.prefork do
-  require 'rspec'
-  require 'elhub/version'
+require 'rspec'
+require 'elhub'
 
-  include Elhub
-end
-
-Spork.each_run do
-end
+Dotenv.load '.env.test'
