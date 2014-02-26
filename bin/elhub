@@ -29,13 +29,10 @@ command :list do |c|
   c.default_value 'local'
   c.flag :f
   c.action do |global_options,options,args|
-
-    puts [global_options, options, args]
-
-
     if options[:all]
-      Repository.find.each_with_index do |idx, repository|
-        puts [idx, repositor]
+      Repository.find.each do |repository|
+        binding.pry
+        puts [repository]
       end
     end
 

@@ -1,7 +1,12 @@
 class Repository
 
   def self.find
-    Dir.glob( File.join(ENV['HOME'],'/**/.git') )
+    scan.map{ |dir| Grit::Repo.new(dir) }
+  end
+
+  private
+  def self.scan(dir = ENV['HOME'])
+    Dir.glob( File.join(dir,'/**/.git') )
   end
 
 end
